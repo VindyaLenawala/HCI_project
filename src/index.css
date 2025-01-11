@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #e6e6ff;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* New class for the full-page background */
+.full-page-background {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-image: url('/backgroundImage.png'); /* Ensure the path is correct */
+  background-size: cover; /* Ensure image covers the full container */
+  background-position: center;
+  background-repeat: no-repeat; /* Prevent tiling */
+  margin: 0;
+  padding: 0;
+}
+
+.register-message {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36px; /* Adjust size as needed */
+  font-weight: normal; /* You can modify if you want bold */
+}
+
+.signin-message {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 48px; /* Adjust size as needed */
+  font-weight: bold;
+}
+
+.animatedButton{
+    animation-duration: 10000ms;
+}
